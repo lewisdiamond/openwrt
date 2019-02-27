@@ -15,6 +15,7 @@
 /files
 /overlay
 /package/feeds
+/package/tessel
 /package/openwrt-packages
 key-build*
 *.orig

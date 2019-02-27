@@ -465,6 +465,15 @@ define Device/rt-ac51u
 endef
 TARGET_DEVICES += rt-ac51u
 
+define Device/tessel
+  DTS := Tessel
+  IMAGE_SIZE := $(ralink_default_fw_size_32M)
+  PACKAGES:= kmod-usb-core kmod-usb-ledtrig-usbport kmod-usb-serial kmod-usb-serial-ch341 kmod-usb-serial-ftdi kmod-usb-serial-pl2303 kmod-usb-serial-option kmod-usb-serial-wwan kmod-usb-acm kmod-usb-hid libusb-1.0 usbutils udev kmod-usb-storage kmod-usb-storage-extras kmod-fs-vfat kmod-nls-cp437 kmod-nls-utf8 kmod-nls-iso8859-1 block-mount nano dmesg rpcd rpcd-mod-iwinfo wget ca-certificates mdns-utils uboot-envtools uboot-mt7620 kmod-rtl8192cu
+  DEVICE_TITLE := Tessel 
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-spi-dev
+endef
+TARGET_DEVICES += tessel 
+
 define Device/tiny-ac
   DTS := TINY-AC
   DEVICE_TITLE := Dovado Tiny AC

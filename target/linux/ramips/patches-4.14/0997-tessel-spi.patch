@@ -1,0 +1,10 @@
+--- a/drivers/spi/spidev.c
++++ a/drivers/spi/spidev.c
+@@ -670,6 +670,7 @@
+ 	{ .compatible = "ge,achc" },
+ 	{ .compatible = "semtech,sx1301" },
+ 	{ .compatible = "siliconlabs,si3210" },
++	{ .compatible = "tessel,t2-samd21" },
+ 	{},
+ };
+ MODULE_DEVICE_TABLE(of, spidev_dt_ids);

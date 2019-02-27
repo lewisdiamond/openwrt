@@ -177,7 +177,8 @@
 		};
 
 		spi0: spi@b00 {
-			compatible = "ralink,mt7620a-spi", "ralink,rt2880-spi";
+			compatible = "ralink,mt7620a-spi", "ralink,rt5350-spi", "ralink,rt2880-spi";
+
 			reg = <0xb00 0x40>;
 
 			resets = <&rstctrl 18>;
@@ -260,8 +261,8 @@
 
 		spi_cs1: spi1 {
 			spi1 {
-				ralink,group = "spi_cs1";
-				ralink,function = "spi_cs1";
+				ralink,group = "spi cs1";
+				ralink,function = "spi cs1";
 			};
 		};
 

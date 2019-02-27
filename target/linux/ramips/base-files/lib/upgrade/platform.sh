@@ -147,6 +147,7 @@ platform_check_image() {
 	sk-wb8|\
 	sl-r7205|\
 	tama,w06|\
+	tessel|\
 	tew-638apb-v2|\
 	tew-691gr|\
 	tew-692gr|\
